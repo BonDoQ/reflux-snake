@@ -1,0 +1,14 @@
+{
+  "name": "reflux-snake",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "A Snake Game using Reflux and ReactJs",
+  "author": "BonDoQ <ahmed@bondoq.me> (http://bondoq.me)",
+  "repository": "https://github.com/BonDoQ/reflux-snake.git",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "react": "~0.12.1",
+    "reflux": "~0.2.0"
+  },
+  "devDependencies": {}
+}

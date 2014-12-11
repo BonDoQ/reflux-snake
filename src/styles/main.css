@@ -1,0 +1,46 @@
+.empty {
+    background: #808080;
+}
+
+.snake {
+    background: black;
+}
+
+.food {
+    background: blue;
+}
+
+.crash {
+    background: red;
+}
+
+.table {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    /*border: solid;*/
+    /*border-width: thin;*/
+    /*padding-left: 5px;*/
+    /*padding-right: 5px;*/
+    width: 30px;
+    height: 30px;
+}
+
+.score {
+    text-align: center;
+}
+
+.number {
+    color: blue;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}

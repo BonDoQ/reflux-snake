@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Reflux-Snake</title>
+
+        <!-- build:jslib js/dist/lib.js -->
+        <script src="bower_components/react/react-with-addons.js"></script>
+        <script src="bower_components/reflux/dist/reflux.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:css styles/style.css -->
+        <link rel="stylesheet" href="src/styles/main.css"/>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!-- build:js js/dist/app.js -->
+        <script src="src/js/helpers/constants.js"></script>
+        <script src="src/js/actions/actions.js"></script>
+        <script src="src/js/stores/food.js"></script>
+        <script src="src/js/stores/snake.js"></script>
+        <script src="src/js/stores/board.js"></script>
+        <script src="build/js/components/cell.js"></script>
+        <script src="build/js/components/score.js"></script>
+        <script src="build/js/components/board.js"></script>
+        <script src="build/js/components/game.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
