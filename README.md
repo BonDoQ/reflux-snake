@@ -19,4 +19,4 @@ It need some Update and i will do it ASAP
 * Enable Pause / Stop Game
 * Code Documentation
 * Unit tests
-* Goog Game Documentation
+* Good Game Documentation
