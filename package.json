@@ -6,6 +6,9 @@
   "author": "BonDoQ <ahmed@bondoq.me> (http://bondoq.me)",
   "repository": "https://github.com/BonDoQ/reflux-snake.git",
   "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-build-control": "^0.2.2",
+    "grunt-cli": "^0.1.13",
     "gulp": "^3.8.10",
     "gulp-bower": "0.0.7",
     "gulp-clean": "^0.3.1",
