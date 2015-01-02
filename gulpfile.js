@@ -12,17 +12,21 @@ var jshint = require('gulp-jshint');
 var runSequence = require('run-sequence');
 var clean = require('gulp-clean');
 var watch = require('gulp-watch');
+var sass = require('gulp-sass');
 
+
+// Convert Sass to Css
+gulp.task('sass', function () {
+    gulp.src('src/styles/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('build/styles'));
+});
 
 // watch file Changes
 gulp.task('watch', function () {
     return gulp.watch('src/**/*.*', ['develop']);
 });
 
-// copy Images
-gulp.task('cpy-img', function(){
-    return gulp.src(['img/**/*']).pipe(gulp.dest('dist/img'));
-});
 // clean build and dist folders
 gulp.task('clean', function () {
     return gulp.src(['build/', 'dist/'])
@@ -79,9 +83,9 @@ gulp.task('devServer', function () {
 });
 
 gulp.task('develop', function (callback) {
-    runSequence('clean', 'reactJSX', 'jshint', callback);
+    runSequence('clean', 'reactJSX', 'jshint', 'sass', callback);
 });
 
 gulp.task('run', function (callback) {
-    runSequence ('clean', 'bower', 'reactJSX', 'jshint', 'usemin', 'cpy-img', 'server', callback);
+    runSequence ('clean', 'bower', 'reactJSX', 'jshint', 'sass', 'usemin', 'server', callback);
 });

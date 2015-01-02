@@ -1,0 +1,88 @@
+// Variables
+
+$empty-bg: #FFF;
+$snake-bg: #000;
+$food-bg: #0000FF;
+$cell-edge: 20px;
+// End Variables
+
+.empty {
+  height: $cell-edge;
+  width: $cell-edge;
+  background: $empty-bg;
+}
+
+.snake {
+  height: $cell-edge;
+  width: $cell-edge;
+  background: $snake-bg;
+}
+.food {
+  border-radius: 50%;
+  background:$food-bg;
+  width:$cell-edge;
+  height:$cell-edge;
+  position:relative;
+  text-align:center;
+}
+
+.table {
+  display: table;
+  border: solid;
+  border-width: thin;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  border: solid;
+  border-width: thin;
+  width: $cell-edge;
+  height: $cell-edge;
+}
+
+.score {
+  text-align: center;
+}
+
+.number {
+  color: $food-bg;
+}
+
+.head {
+  width: $cell-edge;
+  height: $cell-edge;
+  background-color: $snake-bg;
+  border: solid;
+  border-width: thin;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.head-right {
+  @extend .head;
+  border-top-right-radius: $cell-edge / 2;
+  border-bottom-right-radius: $cell-edge / 2;
+}
+
+.head-left {
+  @extend .head;
+  border-top-left-radius: $cell-edge / 2;
+  border-bottom-left-radius: $cell-edge / 2;
+}
+
+.head-up {
+  @extend .head;
+  border-top-right-radius: $cell-edge / 2;
+  border-top-left-radius: $cell-edge / 2;
+}
+
+.head-down {
+  @extend .head;
+  border-bottom-right-radius: $cell-edge / 2;
+  border-bottom-left-radius: $cell-edge / 2;
+}

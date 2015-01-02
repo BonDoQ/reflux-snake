@@ -4,7 +4,7 @@
 Config = {
     SCORE_INC: 1,
     BOARD_HEIGHT: 18,
-    BOARD_WIDTH: 43,
+    BOARD_WIDTH: 39,
     DIR_LEFT: 'left',
     DIR_UP: 'up',
     DIR_RIGHT: 'right',
@@ -18,13 +18,16 @@ Config = {
     HEAD_IMG_SRC: "img/Snake-",
     CSS_EMPTY_CLASS: 'empty',
     CSS_SNAKE_CLASS: 'snake',
-    CSS_HEAD_CLASS: 'head',
     CSS_FOOD_CLASS: 'food',
     CSS_CRASH_CLASS: 'crash',
     ACTION_SNAKE_MOVE: 'snakeMove',
     ACTION_FOOD_GENERATE: 'foodGenerate',
     ACTION_SNAKE_EAT: 'snakeEat',
     ACTION_SNAKE_COLLIDE: 'snakeCollide',
-    ACTION_SNAKE_INIT: 'snakeInit'
+    ACTION_SNAKE_INIT: 'snakeInit',
+    CSS_HEAD_CLASS: function (dir) {
+        dir = dir || this.DIR_RIGHT;
+        return 'head-' + dir;
+    }
 
 };

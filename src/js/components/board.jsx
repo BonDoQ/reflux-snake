@@ -42,7 +42,7 @@ var BoardComponent = React.createClass({
         for (var i = 0; i < this.props.cells.length; i++) {
             var cls = [];
             for (var j = 0; j < this.props.cells[i].length; j++) {
-                cls.push(<CellComponent cell={this.props.cells[i][j]} direction={this.props.direction}></CellComponent>)
+                cls.push(<CellComponent cell={this.props.cells[i][j]}></CellComponent>)
             }
             rows.push(<div className="row">{cls}</div>);
         }

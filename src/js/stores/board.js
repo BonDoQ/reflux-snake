@@ -67,7 +67,7 @@ var boardStore = Reflux.createStore({
         for (var i = 0; i < length; i++) {
             this.cells[this.snake.cells[i].y][this.snake.cells[i].x].type = Config.CSS_SNAKE_CLASS;
         }
-        this.cells[this.snake.cells[length-1].y][this.snake.cells[length-1].x].type = Config.CSS_HEAD_CLASS;
+        this.cells[this.snake.cells[length-1].y][this.snake.cells[length-1].x].type = Config.CSS_HEAD_CLASS(this.snake.direction);
     },
 
     updateBoard: function () {
